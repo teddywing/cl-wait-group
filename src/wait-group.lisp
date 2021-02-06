@@ -12,6 +12,11 @@
 
   (:documentation "TODO"))
 
+(defmethod print-object ((object wait-group) stream)
+  (print-unreadable-object (object stream :type t)
+    (with-slots (counter) object
+      (format stream ":counter ~s" counter))))
+
 (defun make-wait-group ()
   "TODO"
   (make-instance 'wait-group))
