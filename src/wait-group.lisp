@@ -40,4 +40,4 @@
 
 (defmethod wait ((wait-group wait-group))
   "TODO"
-  (loop until (= (counter wait-group) 0)))
+  (loop until (<= (counter wait-group) 0)))
