@@ -1,6 +1,6 @@
 (asdf:defsystem wait-group
   :description "Wait for a collection of jobs to finish"
-  :version "0.0.1"
+  :version "0.1.0"
 
   :components ((:module "src"
                 :serial t
