@@ -1,5 +1,5 @@
 (asdf:defsystem wait-group
-  :description "TODO"
+  :description "Wait for a collection of jobs to finish"
   :version "0.0.1"
 
   :components ((:module "src"
