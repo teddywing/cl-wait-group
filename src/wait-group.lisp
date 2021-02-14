@@ -1,7 +1,5 @@
 ;;;; TODO
 
-;; TODO: Add a wg:clear
-
 (in-package :wait-group)
 
 (defclass wait-group ()
