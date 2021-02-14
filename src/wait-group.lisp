@@ -1,5 +1,11 @@
 ;;;; Wait group provides a way to block waiting for jobs to finish.
 
+;;; Copyright (c) 2021  Teddy Wing
+;;;
+;;; This Source Code Form is subject to the terms of the Mozilla Public
+;;; License, v. 2.0. If a copy of the MPL was not distributed with this
+;;; file, You can obtain one at https://mozilla.org/MPL/2.0/.
+
 ;;; Example:
 ;;;
 ;;; The following initialises a WebSocket client, sends a message, and waits
