@@ -1,4 +1,25 @@
-;;;; TODO
+;;;; Wait group provides a way to block waiting for jobs to finish.
+
+;;; Example:
+;;;
+;;; The following initialises a WebSocket client, sends a message, and waits
+;;; for a response.
+;;;
+;;; (defvar *client* (wsd:make-client "ws://localhost:5555/"))
+;;; (defvar *wg* (wait-group:make-wait-group))
+;;;
+;;; (wsd:start-connection *client*)
+;;;
+;;; (wsd:on :message *client* #'(lambda (message)
+;;;                               (format t "Received: ~a~%" message)
+;;;                               (wait-group:done *wg*))
+;;;
+;;; (wsd:send *client* "Sending")
+;;; (wait-group:add *wg*)
+;;;
+;;; (wait-group:wait *wg*)
+;;;
+;;; (wsd:close-connection *client*)
 
 (in-package :wait-group)
 
